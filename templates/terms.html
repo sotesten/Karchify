@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — PaisaFlow{% endblock %}
+
+{% block content %}
+
+<section class="legal-section">
+    <div class="legal-container">
+        <div class="legal-header">
+            <div class="legal-eyebrow">Legal</div>
+            <h1 class="legal-title">Terms and Conditions</h1>
+            <p class="legal-updated">Last updated: July 26, 2026</p>
+        </div>
+
+        <div class="legal-card">
+            <p class="legal-intro">
+                Welcome to PaisaFlow. By accessing or using our personal expense tracking
+                service, you agree to be bound by these Terms and Conditions. Please read
+                them carefully before creating an account or logging any expenses. If you
+                do not agree with any part of these terms, you must not use the service.
+            </p>
+
+            <h2 class="legal-h2">1. Acceptance of Terms</h2>
+            <p class="legal-p">
+                By creating an account, signing in, or otherwise using PaisaFlow, you
+                confirm that you are at least 18 years of age, that you have the legal
+                capacity to enter into a binding agreement, and that you accept and will
+                comply with these Terms and Conditions. If you are using the service on
+                behalf of another person or entity, you represent that you have the
+                authority to bind them to these terms.
+            </p>
+
+            <h2 class="legal-h2">2. Use of the Service</h2>
+            <p class="legal-p">
+                PaisaFlow provides a personal expense tracking tool that allows you to
+                record, categorize, and review your spending. You agree to use the
+                service only for lawful purposes and in a manner that does not infringe
+                the rights of others or restrict their use of the service.
+            </p>
+            <p class="legal-p">You agree not to:</p>
+            <ul class="legal-list">
+                <li>Use the service to log expenses on behalf of another person without their consent.</li>
+                <li>Attempt to gain unauthorized access to any part of the service or to other users' accounts.</li>
+                <li>Upload content that is unlawful, misleading, or intended to disrupt the service.</li>
+                <li>Reverse engineer, decompile, or otherwise attempt to extract the source code of the service.</li>
+                <li>Use the service in connection with any commercial resale or redistribution of expense data.</li>
+            </ul>
+
+            <h2 class="legal-h2">3. User Data and Account</h2>
+            <p class="legal-p">
+                You are responsible for maintaining the confidentiality of your account
+                credentials and for all activity that occurs under your account. You agree
+                to notify us promptly of any unauthorized use of your account.
+            </p>
+            <p class="legal-p">
+                The expense data you enter into PaisaFlow belongs to you. We store this
+                data solely to provide the service to you — to display your history,
+                generate summaries, and support filtering. We do not sell, rent, or share
+                your expense data with third parties for marketing purposes.
+            </p>
+            <p class="legal-p">
+                We take reasonable measures to protect your data, but no method of
+                transmission or storage is completely secure. You acknowledge that you
+                provide your data at your own risk and that we cannot guarantee absolute
+                security.
+            </p>
+
+            <h2 class="legal-h2">4. Limitations of Liability</h2>
+            <p class="legal-p">
+                PaisaFlow is provided on an "as is" and "as available" basis, without
+                warranties of any kind, either express or implied, including but not
+                limited to warranties of merchantability, fitness for a particular
+                purpose, or non-infringement.
+            </p>
+            <p class="legal-p">
+                To the maximum extent permitted by law, PaisaFlow and its creators shall
+                not be liable for any indirect, incidental, special, consequential, or
+                punitive damages, including but not limited to loss of data, loss of
+                profits, or any other commercial loss arising out of or in connection
+                with your use of, or inability to use, the service.
+            </p>
+            <p class="legal-p">
+                PaisaFlow is a personal tracking aid and does not provide financial,
+                tax, legal, or investment advice. Any insights or summaries surfaced by
+                the service are for informational purposes only and should not be relied
+                upon as a substitute for professional advice.
+            </p>
+
+            <h2 class="legal-h2">5. Changes to These Terms</h2>
+            <p class="legal-p">
+                We may update these Terms and Conditions from time to time to reflect
+                changes in the service, our practices, or applicable law. When we make
+                changes, we will revise the "Last updated" date at the top of this page.
+                Continued use of PaisaFlow after a change has been posted constitutes
+                your acceptance of the updated terms.
+            </p>
+            <p class="legal-p">
+                If you do not agree with the updated terms, you may stop using the
+                service and close your account at any time.
+            </p>
+
+            <h2 class="legal-h2">6. Contact</h2>
+            <p class="legal-p">
+                If you have any questions about these Terms and Conditions, please reach
+                out through the contact information available in the app.
+            </p>
+        </div>
+
+        <div class="legal-back">
+            <a href="{{ url_for('landing') }}" class="btn-ghost">&larr; Back to home</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
