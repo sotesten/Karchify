@@ -5,11 +5,31 @@
 {% block content %}
 
 <section class="auth-section">
-    <div class="auth-container">
+
+    {# ----- left rail: value props ----- #}
+    <aside class="auth-aside reveal">
+        <h2 class="auth-aside-title">
+            Start<br>tracking<br><em>today.</em>
+        </h2>
+        <p class="auth-aside-body">
+            Three quick fields. Zero paperwork. You'll be logging
+            your first expense in under a minute.
+        </p>
+        <ul class="auth-aside-list">
+            <li>Free account, no card</li>
+            <li>Cancel anytime</li>
+            <li>Your data stays yours</li>
+            <li>Bold, fast, simple</li>
+        </ul>
+    </aside>
+
+    {# ----- right rail: form ----- #}
+    <div class="auth-container reveal reveal-2">
 
         <div class="auth-header">
-            <h1 class="auth-title">Create your account</h1>
-            <p class="auth-subtitle">Start tracking your expenses today</p>
+            <span class="auth-eyebrow">▸ Create account</span>
+            <h1 class="auth-title">Make<br>an account.</h1>
+            <p class="auth-subtitle">Start tracking your expenses today.</p>
         </div>
 
         <div class="auth-card">
@@ -19,24 +39,35 @@
 
             <form method="POST" action="/register">
                 <div class="form-group">
-                    <label for="name">Full name</label>
+                    <label for="name">
+                        Full name
+                        <span>required</span>
+                    </label>
                     <input type="text" id="name" name="name"
                            class="form-input" placeholder="Nitish Kumar"
                            required autofocus>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email address</label>
+                    <label for="email">
+                        Email address
+                        <span>required</span>
+                    </label>
                     <input type="email" id="email" name="email"
                            class="form-input" placeholder="nitish@example.com"
                            required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password">
+                        Password
+                        <span>min 8</span>
+                    </label>
                     <input type="password" id="password" name="password"
                            class="form-input" placeholder="Min. 8 characters"
                            required>
                 </div>
-                <button type="submit" class="btn-submit">Create account</button>
+                <button type="submit" class="btn-submit">
+                    Create account <span class="btn-arrow">→</span>
+                </button>
             </form>
         </div>
 
@@ -46,6 +77,7 @@
         </p>
 
     </div>
+
 </section>
 
 {% endblock %}

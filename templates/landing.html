@@ -4,88 +4,194 @@
 
 {% block content %}
 
+{# ============================================================
+   BRUTALIST TICKER
+   ============================================================ #}
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+        <span>
+            <em>Money in.</em> Money out. <em>Money moves.</em>
+            Track every rupee.
+            <em>Zero friction.</em>
+            Built bold.
+            <em>For everyday spenders.</em>
+            PaisaFlow.
+            <em>Know the flow.</em>
+            Track every rupee.
+            <em>Zero friction.</em>
+            Built bold.
+            <em>For everyday spenders.</em>
+            PaisaFlow.
+            <em>Know the flow.</em>
+        </span>
+    </div>
+</div>
+
+{# ============================================================
+   HERO — massive type, brutal composition
+   ============================================================ #}
 <section class="hero">
-    <div class="hero-inner">
+    <div class="hero-inner reveal">
         <div class="hero-badge">Personal Finance Tracker</div>
+
         <h1 class="hero-title">
-            Know where your<br>
-            <em>money goes</em>
+            <span class="line"><span>Know</span></span>
+            <span class="line"><span>where</span></span>
+            <span class="line"><span><em>money</em></span></span>
+            <span class="line"><span class="stroke">goes.</span></span>
+            <span class="small">Every rupee · Every day</span>
         </h1>
+
         <p class="hero-subtitle">
-            Log expenses, understand your spending patterns,
-            and take control of your financial life —
-            one transaction at a time.
+            Log expenses. Understand patterns. Take control of your
+            financial life — one transaction at a time.
         </p>
+
         <div class="hero-actions">
-            <a href="{{ url_for('register') }}" class="btn-primary">Start tracking free</a>
-            <a href="{{ url_for('login') }}" class="btn-ghost">Sign in</a>
+            <a href="{{ url_for('register') }}" class="btn-primary">
+                Start tracking free <span class="btn-arrow">→</span>
+            </a>
+            <a href="{{ url_for('login') }}" class="btn-ghost">
+                Sign in <span class="btn-arrow">↗</span>
+            </a>
         </div>
     </div>
+
     <div class="hero-visual">
         <div class="mock-card">
             <div class="mock-card-header">
-                <span class="mock-label">March 2026</span>
-                <span class="mock-total">₹12,450</span>
+                <span class="mock-label">March · 2026</span>
+                <span class="mock-total"><span>₹</span>12,450</span>
             </div>
             <div class="mock-bars">
                 <div class="mock-bar-row">
                     <span class="mock-cat">Bills</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar" style="width: 72%"></div>
-                    </div>
+                    <div class="mock-bar-track"><div class="mock-bar" style="width: 72%"></div></div>
                     <span class="mock-amt">₹4,500</span>
                 </div>
                 <div class="mock-bar-row">
                     <span class="mock-cat">Food</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-2" style="width: 52%"></div>
-                    </div>
+                    <div class="mock-bar-track"><div class="mock-bar mock-bar-2" style="width: 52%"></div></div>
                     <span class="mock-amt">₹3,200</span>
                 </div>
                 <div class="mock-bar-row">
                     <span class="mock-cat">Health</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-3" style="width: 33%"></div>
-                    </div>
+                    <div class="mock-bar-track"><div class="mock-bar mock-bar-3" style="width: 33%"></div></div>
                     <span class="mock-amt">₹2,050</span>
                 </div>
                 <div class="mock-bar-row">
                     <span class="mock-cat">Transport</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-4" style="width: 28%"></div>
-                    </div>
+                    <div class="mock-bar-track"><div class="mock-bar mock-bar-4" style="width: 28%"></div></div>
                     <span class="mock-amt">₹1,800</span>
                 </div>
+            </div>
+            <div class="mock-card-footer">
+                <span>↑ +12% vs Feb</span>
+                <span>4 categories</span>
             </div>
         </div>
     </div>
 </section>
 
-<section class="features">
-    <div class="features-inner">
-        <div class="feature-card">
-            <div class="feature-icon">₹</div>
-            <h3 class="feature-title">Log expenses instantly</h3>
-            <p class="feature-body">Add any expense in seconds. Category, amount, date, description — all in one simple form.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">◎</div>
-            <h3 class="feature-title">Understand your patterns</h3>
-            <p class="feature-body">See exactly where your money goes with category breakdowns and monthly summaries.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">◷</div>
-            <h3 class="feature-title">Filter by time period</h3>
-            <p class="feature-body">View your spending for any date range — last week, last month, or a custom period.</p>
-        </div>
+{# ============================================================
+   STATS BAR
+   ============================================================ #}
+<section class="stats-bar" aria-label="PaisaFlow at a glance">
+    <div class="stat reveal">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Free. Always.</div>
+    </div>
+    <div class="stat reveal reveal-2">
+        <div class="stat-num">4<span>×</span></div>
+        <div class="stat-label">Faster logging</div>
+    </div>
+    <div class="stat reveal reveal-3">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Expenses tracked</div>
+    </div>
+    <div class="stat reveal reveal-4">
+        <div class="stat-num">0<span>$</span></div>
+        <div class="stat-label">Hidden fees</div>
     </div>
 </section>
 
+{# ============================================================
+   FEATURES
+   ============================================================ #}
+<section class="features">
+    <div class="section-tag reveal">Capabilities</div>
+    <h2 class="section-heading reveal reveal-2">
+        Everything you need.<br>
+        Nothing you <em>don't.</em>
+    </h2>
+
+    <div class="features-inner">
+        <article class="feature-card reveal">
+            <span class="feature-num">01 / Feature</span>
+            <div class="feature-icon" aria-hidden="true">₹</div>
+            <h3 class="feature-title">Log in seconds</h3>
+            <p class="feature-body">
+                Add any expense in seconds. Category, amount, date,
+                description — all in one simple, raw form.
+            </p>
+            <a href="{{ url_for('register') }}" class="feature-link">
+                Start now <span>→</span>
+            </a>
+        </article>
+
+        <article class="feature-card reveal reveal-2">
+            <span class="feature-num">02 / Feature</span>
+            <div class="feature-icon" aria-hidden="true">◎</div>
+            <h3 class="feature-title">See your patterns</h3>
+            <p class="feature-body">
+                Exactly where your money goes — category breakdowns
+                and monthly summaries in bold, legible layouts.
+            </p>
+            <a href="{{ url_for('register') }}" class="feature-link">
+                Start now <span>→</span>
+            </a>
+        </article>
+
+        <article class="feature-card reveal reveal-3">
+            <span class="feature-num">03 / Feature</span>
+            <div class="feature-icon" aria-hidden="true">◷</div>
+            <h3 class="feature-title">Filter any range</h3>
+            <p class="feature-body">
+                View your spending for any date range — last week,
+                last month, or a custom period you've defined.
+            </p>
+            <a href="{{ url_for('register') }}" class="feature-link">
+                Start now <span>→</span>
+            </a>
+        </article>
+    </div>
+</section>
+
+{# ============================================================
+   CLOSING CTA
+   ============================================================ #}
 <section class="cta-section">
     <div class="cta-inner">
-        <h2 class="cta-title">Ready to take control?</h2>
-        <p class="cta-body">Join thousands of people who track their expenses with PaisaFlow.</p>
-        <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
+        <div class="reveal">
+            <div class="cta-eyebrow">▸ Final call to action</div>
+            <h2 class="cta-title">
+                Ready to<br>take <em>control?</em>
+            </h2>
+        </div>
+        <div class="cta-side reveal reveal-2">
+            <p class="cta-body">
+                Join thousands of people who track their expenses
+                with PaisaFlow — bold, fast, and free.
+            </p>
+            <div class="cta-actions">
+                <a href="{{ url_for('register') }}" class="btn-primary">
+                    Create free account <span class="btn-arrow">→</span>
+                </a>
+                <a href="{{ url_for('login') }}" class="btn-ghost">
+                    Sign in <span class="btn-arrow">↗</span>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
