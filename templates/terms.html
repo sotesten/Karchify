@@ -5,14 +5,22 @@
 {% block content %}
 
 <section class="legal-section">
-    <div class="legal-container">
-        <div class="legal-header">
-            <div class="legal-eyebrow">Legal</div>
-            <h1 class="legal-title">Terms and Conditions</h1>
-            <p class="legal-updated">Last updated: July 26, 2026</p>
-        </div>
+    <div class="legal-container reveal">
 
-        <div class="legal-card">
+        <aside class="legal-aside">
+            <span class="legal-eyebrow">▸ Legal · 01</span>
+            <h2 class="legal-aside-title">Terms<br>&amp; Conditions.</h2>
+            <div class="legal-aside-meta">
+                Last updated
+                <strong>26 July 2026</strong>
+            </div>
+            <a href="{{ url_for('landing') }}" class="legal-back">← Back home</a>
+        </aside>
+
+        <div class="legal-content">
+            <h1 class="legal-title">Terms<br>&amp; Conditions.</h1>
+            <p class="legal-updated">Last updated · 26 July 2026</p>
+
             <p class="legal-intro">
                 Welcome to PaisaFlow. By accessing or using our personal expense tracking
                 service, you agree to be bound by these Terms and Conditions. Please read
@@ -20,7 +28,7 @@
                 do not agree with any part of these terms, you must not use the service.
             </p>
 
-            <h2 class="legal-h2">1. Acceptance of Terms</h2>
+            <h2 class="legal-h2">Acceptance of terms</h2>
             <p class="legal-p">
                 By creating an account, signing in, or otherwise using PaisaFlow, you
                 confirm that you are at least 18 years of age, that you have the legal
@@ -30,7 +38,7 @@
                 authority to bind them to these terms.
             </p>
 
-            <h2 class="legal-h2">2. Use of the Service</h2>
+            <h2 class="legal-h2">Use of the service</h2>
             <p class="legal-p">
                 PaisaFlow provides a personal expense tracking tool that allows you to
                 record, categorize, and review your spending. You agree to use the
@@ -46,7 +54,7 @@
                 <li>Use the service in connection with any commercial resale or redistribution of expense data.</li>
             </ul>
 
-            <h2 class="legal-h2">3. User Data and Account</h2>
+            <h2 class="legal-h2">User data and account</h2>
             <p class="legal-p">
                 You are responsible for maintaining the confidentiality of your account
                 credentials and for all activity that occurs under your account. You agree
@@ -65,7 +73,7 @@
                 security.
             </p>
 
-            <h2 class="legal-h2">4. Limitations of Liability</h2>
+            <h2 class="legal-h2">Limitations of liability</h2>
             <p class="legal-p">
                 PaisaFlow is provided on an "as is" and "as available" basis, without
                 warranties of any kind, either express or implied, including but not
@@ -86,7 +94,7 @@
                 upon as a substitute for professional advice.
             </p>
 
-            <h2 class="legal-h2">5. Changes to These Terms</h2>
+            <h2 class="legal-h2">Changes to these terms</h2>
             <p class="legal-p">
                 We may update these Terms and Conditions from time to time to reflect
                 changes in the service, our practices, or applicable law. When we make
@@ -99,16 +107,18 @@
                 service and close your account at any time.
             </p>
 
-            <h2 class="legal-h2">6. Contact</h2>
+            <h2 class="legal-h2">Contact</h2>
             <p class="legal-p">
                 If you have any questions about these Terms and Conditions, please reach
                 out through the contact information available in the app.
             </p>
+
+            <div class="legal-cta">
+                <p><strong>Questions?</strong> Reach out through the app.</p>
+                <a href="{{ url_for('landing') }}" class="btn-primary">Back to home <span class="btn-arrow">→</span></a>
+            </div>
         </div>
 
-        <div class="legal-back">
-            <a href="{{ url_for('landing') }}" class="btn-ghost">&larr; Back to home</a>
-        </div>
     </div>
 </section>
 

@@ -5,11 +5,31 @@
 {% block content %}
 
 <section class="auth-section">
-    <div class="auth-container">
+
+    {# ----- left rail: value props ----- #}
+    <aside class="auth-aside reveal">
+        <h2 class="auth-aside-title">
+            Pick up<br>where you<br><em>left off.</em>
+        </h2>
+        <p class="auth-aside-body">
+            Sign back in to see what you spent, where it went, and
+            what's left for the month. No clutter. No noise.
+        </p>
+        <ul class="auth-aside-list">
+            <li>Category breakdowns</li>
+            <li>Custom date filters</li>
+            <li>Your data, your rules</li>
+            <li>Free, forever</li>
+        </ul>
+    </aside>
+
+    {# ----- right rail: form ----- #}
+    <div class="auth-container reveal reveal-2">
 
         <div class="auth-header">
-            <h1 class="auth-title">Welcome back</h1>
-            <p class="auth-subtitle">Sign in to your PaisaFlow account</p>
+            <span class="auth-eyebrow">▸ Sign in</span>
+            <h1 class="auth-title">Welcome<br>back.</h1>
+            <p class="auth-subtitle">Sign in to your PaisaFlow account.</p>
         </div>
 
         <div class="auth-card">
@@ -19,18 +39,26 @@
 
             <form method="POST" action="/login">
                 <div class="form-group">
-                    <label for="email">Email address</label>
+                    <label for="email">
+                        Email address
+                        <span>required</span>
+                    </label>
                     <input type="email" id="email" name="email"
                            class="form-input" placeholder="nitish@example.com"
                            required autofocus>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password">
+                        Password
+                        <span>required</span>
+                    </label>
                     <input type="password" id="password" name="password"
                            class="form-input" placeholder="Your password"
                            required>
                 </div>
-                <button type="submit" class="btn-submit">Sign in</button>
+                <button type="submit" class="btn-submit">
+                    Sign in <span class="btn-arrow">→</span>
+                </button>
             </form>
         </div>
 
@@ -40,6 +68,7 @@
         </p>
 
     </div>
+
 </section>
 
 {% endblock %}
